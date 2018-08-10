@@ -5,17 +5,17 @@
 
 <hibernate-mapping package="com.jlcindia.hibernate">
 
-<class name="Customer" table="customers">
+        <class name="Customer" table="customers">
 
-<id name="cid" column="cid" type="int">
-<generator class="increment"/>
-</id>
+                <id name="cid" column="cid" type="int">
+                        <generator class="increment"/>
+                </id>
 
-<property name="cname"/>
-<property name="email" column="email"/>
-<property name="phone" column="phone" type="long"/>
-<property name="city" column="city" type="string"/>
-<property name="bal" column="bal" type="double"/>
+                <property name="cname"/>
+                <property name="email" column="email"/>
+                <property name="phone" column="phone" type="long"/>
+                <property name="city" column="city" type="string"/>
+                <property name="bal" column="bal" type="double"/>
 
-</class>
+        </class>
 </hibernate-mapping>
