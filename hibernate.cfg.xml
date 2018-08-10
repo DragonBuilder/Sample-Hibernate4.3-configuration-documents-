@@ -4,14 +4,20 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatedb</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/[your-database-name]</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">[your-password]</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
 		
+		<!-- SELECT ONE -->
+		<!-- If mapping done in xml-->
+		<mapping resource="[path/to/your/class-mapping-xml]"/>
+				OR
+		<!-- If mapping done using annotations-->
+		<mapping  class="[package.to.your.persistence-class]"/>
+		<!-- ------------------------------------------------    -->
 		
-		<mapping resource="com/jlcindia/hibernate/Customer.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>
