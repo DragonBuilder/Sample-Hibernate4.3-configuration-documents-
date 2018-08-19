@@ -16,6 +16,7 @@
                 <property name="phone" column="phone" type="long"/>
                 <property name="city" column="city" type="string"/>
                 <property name="bal" column="bal" type="double"/>
+                <property name='hbm2ddl.auto'>update</property>
 
         </class>
 </hibernate-mapping>
